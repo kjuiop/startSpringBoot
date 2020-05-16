@@ -1,4 +1,4 @@
-package com.springboot.study.demo;
+package com.springboot.study.startSpringBoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
