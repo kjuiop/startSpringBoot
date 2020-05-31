@@ -27,4 +27,6 @@ public class Board {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+
 }

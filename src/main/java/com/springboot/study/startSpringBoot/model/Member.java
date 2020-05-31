@@ -5,13 +5,16 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @ToString
+@Entity
 public class Member {
 
+    @Id
     private Long memberId;
     private String title;
     private String writer;
