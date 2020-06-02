@@ -22,6 +22,7 @@ public class SampleRestController {
         memberDto.setUserName("kjuiop");
         memberDto.setNickName("Jake");
 
+
         return memberDto;
     }
 }
