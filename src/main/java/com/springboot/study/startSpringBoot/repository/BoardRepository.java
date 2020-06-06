@@ -3,12 +3,12 @@ package com.springboot.study.startSpringBoot.repository;
 import com.springboot.study.startSpringBoot.model.Board;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
 
 import java.util.Collection;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 @Transactional(readOnly = true)
 @Repository
-public interface BoardRepository extends JpaRepository<Board, Long> {
+public interface BoardRepository extends CrudRepository<Board, Long>, QuerydslPredicateExecutor<Board> {
 
     List<Board> findBoardByTitle(String title);
 

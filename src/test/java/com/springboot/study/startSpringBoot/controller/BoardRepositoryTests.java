@@ -75,7 +75,6 @@ public class BoardRepositoryTests {
         System.out.println("DELETE Entity ");
         Optional<Board> optBoard = boardRepository.findById(1L);
         Board board = optBoard.get();
-
         boardRepository.delete(board);
     }
 
@@ -87,7 +86,6 @@ public class BoardRepositoryTests {
     @Test
     public void testByWriter() {
         Collection<Board> results = boardRepository.findByWriter("user00");
-
         results.forEach(
                 System.out::println
         );
@@ -109,7 +107,6 @@ public class BoardRepositoryTests {
     public void testByWriterContaining() {
         Collection<Board> results = boardRepository.findByWriterContaining("05");
         results.forEach(System.out::println);
-
     }
 
     @Test
