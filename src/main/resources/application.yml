@@ -1,14 +1,18 @@
+spring:
+    profiles:
+        active: dev
+    jpa:
+        properties:
+            jadira.usertype.autoRegisterUserTypes: true
+    thymeleaf:
+        cache: false
+        mode: HTML
+    servlet:
+        multipart:
+            max-request-size: 100MB
+            max-file-size: 50MB
+    main:
+        allow-bean-definition-overriding: true  #Bean Overriding
+
 server:
     port: 8099
-
-spring:
-    datasource:
-        url: jdbc:mysql://localhost:3306/boot?serverTimezone=UTC&characterEncoding=UTF-8
-        driver-class-name: com.mysql.jdbc.Driver
-        username: root
-        password: gig123$
-
-    jpa:
-        hibernate:
-            ddl-auto: update
-        show-sql: true
