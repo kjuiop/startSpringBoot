@@ -156,6 +156,7 @@ public class BoardRepositoryTests {
         );
     }
 
+
     @Test
     public void testByTitle3() {
         boardRepository.findByTitle2("17").forEach(arr -> System.out.println(Arrays.toString(arr)));
