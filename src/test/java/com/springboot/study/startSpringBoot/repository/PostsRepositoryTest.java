@@ -1,4 +1,4 @@
-package com.springboot.study.startSpringBoot.controller;
+package com.springboot.study.startSpringBoot.repository;
 
 import com.springboot.study.startSpringBoot.model.Posts;
 import com.springboot.study.startSpringBoot.repository.PostsRepository;

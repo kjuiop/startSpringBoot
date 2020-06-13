@@ -1,4 +1,4 @@
-package com.springboot.study.startSpringBoot.controller;
+package com.springboot.study.startSpringBoot.repository;
 
 import com.springboot.study.startSpringBoot.model.Board;
 import com.springboot.study.startSpringBoot.repository.BoardRepository;
